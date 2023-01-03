@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace IkbalUn.Areas.Identity.Data;
 
-public class IkbalUnContext : IdentityDbContext<IdentityUser>
+public class IkbalUnContext : IdentityDbContext<IdentityUser,IdentityRole,string>
 {
     public IkbalUnContext(DbContextOptions<IkbalUnContext> options)
         : base(options)
